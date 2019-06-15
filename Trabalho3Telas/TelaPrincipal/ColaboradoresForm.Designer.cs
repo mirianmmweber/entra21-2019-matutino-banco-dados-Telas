@@ -146,6 +146,7 @@
             // 
             this.mtbCpf.Location = new System.Drawing.Point(60, 214);
             this.mtbCpf.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.mtbCpf.Mask = "999,999,999-99";
             this.mtbCpf.Name = "mtbCpf";
             this.mtbCpf.Size = new System.Drawing.Size(164, 27);
             this.mtbCpf.TabIndex = 9;
@@ -154,6 +155,7 @@
             // 
             this.mtbSalario.Location = new System.Drawing.Point(59, 312);
             this.mtbSalario.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.mtbSalario.Mask = "999999.99";
             this.mtbSalario.Name = "mtbSalario";
             this.mtbSalario.Size = new System.Drawing.Size(164, 27);
             this.mtbSalario.TabIndex = 10;

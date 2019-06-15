@@ -45,17 +45,12 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.mtbSaldo = new System.Windows.Forms.MaskedTextBox();
             this.mtbCep = new System.Windows.Forms.MaskedTextBox();
-            this.cbEstado = new System.Windows.Forms.ComboBox();
-            this.cbBairro = new System.Windows.Forms.ComboBox();
             this.mtbTelefone = new System.Windows.Forms.MaskedTextBox();
             this.txtLogradouro = new System.Windows.Forms.TextBox();
-            this.txtAltura = new System.Windows.Forms.TextBox();
-            this.txtPeso = new System.Windows.Forms.TextBox();
             this.rbNomeSujoSim = new System.Windows.Forms.RadioButton();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.txtComplemento = new System.Windows.Forms.TextBox();
             this.lblCidade = new System.Windows.Forms.Label();
-            this.cbCidade = new System.Windows.Forms.ComboBox();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.dataGridViewClientes = new System.Windows.Forms.DataGridView();
@@ -72,6 +67,11 @@
             this.ColumnLogradouro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNumero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnComlemento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -217,7 +217,7 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(19, 55);
+            this.txtNome.Location = new System.Drawing.Point(18, 55);
             this.txtNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(116, 22);
@@ -227,41 +227,25 @@
             // 
             this.mtbSaldo.Location = new System.Drawing.Point(18, 316);
             this.mtbSaldo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mtbSaldo.Mask = "$999999.99";
             this.mtbSaldo.Name = "mtbSaldo";
             this.mtbSaldo.Size = new System.Drawing.Size(76, 22);
             this.mtbSaldo.TabIndex = 16;
             // 
             // mtbCep
             // 
-            this.mtbCep.Location = new System.Drawing.Point(165, 250);
+            this.mtbCep.Location = new System.Drawing.Point(163, 250);
             this.mtbCep.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mtbCep.Mask = "99999-999";
             this.mtbCep.Name = "mtbCep";
             this.mtbCep.Size = new System.Drawing.Size(76, 22);
             this.mtbCep.TabIndex = 17;
-            // 
-            // cbEstado
-            // 
-            this.cbEstado.FormattingEnabled = true;
-            this.cbEstado.Location = new System.Drawing.Point(164, 55);
-            this.cbEstado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cbEstado.Name = "cbEstado";
-            this.cbEstado.Size = new System.Drawing.Size(116, 25);
-            this.cbEstado.TabIndex = 18;
-            this.cbEstado.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // cbBairro
-            // 
-            this.cbBairro.FormattingEnabled = true;
-            this.cbBairro.Location = new System.Drawing.Point(163, 188);
-            this.cbBairro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cbBairro.Name = "cbBairro";
-            this.cbBairro.Size = new System.Drawing.Size(116, 25);
-            this.cbBairro.TabIndex = 19;
             // 
             // mtbTelefone
             // 
             this.mtbTelefone.Location = new System.Drawing.Point(18, 381);
             this.mtbTelefone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mtbTelefone.Mask = "(99)9999-9999";
             this.mtbTelefone.Name = "mtbTelefone";
             this.mtbTelefone.Size = new System.Drawing.Size(116, 22);
             this.mtbTelefone.TabIndex = 20;
@@ -273,22 +257,6 @@
             this.txtLogradouro.Name = "txtLogradouro";
             this.txtLogradouro.Size = new System.Drawing.Size(116, 22);
             this.txtLogradouro.TabIndex = 21;
-            // 
-            // txtAltura
-            // 
-            this.txtAltura.Location = new System.Drawing.Point(18, 188);
-            this.txtAltura.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtAltura.Name = "txtAltura";
-            this.txtAltura.Size = new System.Drawing.Size(76, 22);
-            this.txtAltura.TabIndex = 22;
-            // 
-            // txtPeso
-            // 
-            this.txtPeso.Location = new System.Drawing.Point(18, 123);
-            this.txtPeso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtPeso.Name = "txtPeso";
-            this.txtPeso.Size = new System.Drawing.Size(76, 22);
-            this.txtPeso.TabIndex = 23;
             // 
             // rbNomeSujoSim
             // 
@@ -327,15 +295,6 @@
             this.lblCidade.Size = new System.Drawing.Size(52, 17);
             this.lblCidade.TabIndex = 27;
             this.lblCidade.Text = "Cidade";
-            // 
-            // cbCidade
-            // 
-            this.cbCidade.FormattingEnabled = true;
-            this.cbCidade.Location = new System.Drawing.Point(164, 123);
-            this.cbCidade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cbCidade.Name = "cbCidade";
-            this.cbCidade.Size = new System.Drawing.Size(116, 25);
-            this.cbCidade.TabIndex = 28;
             // 
             // btnExcluir
             // 
@@ -461,25 +420,65 @@
             this.ColumnComlemento.Name = "ColumnComlemento";
             this.ColumnComlemento.ReadOnly = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(163, 188);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(116, 22);
+            this.textBox1.TabIndex = 32;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(163, 123);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(116, 22);
+            this.textBox2.TabIndex = 33;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(163, 55);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(116, 22);
+            this.textBox3.TabIndex = 34;
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(18, 123);
+            this.maskedTextBox1.Mask = "999.99";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(76, 22);
+            this.maskedTextBox1.TabIndex = 35;
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.Location = new System.Drawing.Point(18, 187);
+            this.maskedTextBox2.Mask = "9.99";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(76, 22);
+            this.maskedTextBox2.TabIndex = 36;
+            // 
             // ClientesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1063, 492);
+            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridViewClientes);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnExcluir);
-            this.Controls.Add(this.cbCidade);
             this.Controls.Add(this.lblCidade);
             this.Controls.Add(this.txtComplemento);
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.rbNomeSujoSim);
-            this.Controls.Add(this.txtPeso);
-            this.Controls.Add(this.txtAltura);
             this.Controls.Add(this.txtLogradouro);
             this.Controls.Add(this.mtbTelefone);
-            this.Controls.Add(this.cbBairro);
-            this.Controls.Add(this.cbEstado);
             this.Controls.Add(this.mtbCep);
             this.Controls.Add(this.mtbSaldo);
             this.Controls.Add(this.txtNome);
@@ -526,17 +525,12 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.MaskedTextBox mtbSaldo;
         private System.Windows.Forms.MaskedTextBox mtbCep;
-        private System.Windows.Forms.ComboBox cbEstado;
-        private System.Windows.Forms.ComboBox cbBairro;
         private System.Windows.Forms.MaskedTextBox mtbTelefone;
         private System.Windows.Forms.TextBox txtLogradouro;
-        private System.Windows.Forms.TextBox txtAltura;
-        private System.Windows.Forms.TextBox txtPeso;
         private System.Windows.Forms.RadioButton rbNomeSujoSim;
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.TextBox txtComplemento;
         private System.Windows.Forms.Label lblCidade;
-        private System.Windows.Forms.ComboBox cbCidade;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.DataGridView dataGridViewClientes;
@@ -553,5 +547,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnLogradouro;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNumero;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnComlemento;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
     }
 }
