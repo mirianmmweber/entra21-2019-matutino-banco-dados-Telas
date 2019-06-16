@@ -14,11 +14,11 @@ namespace TelaPrincipal
         public decimal Altura;
         public bool NomeSujo;
         public decimal Saldo;
-        public int Telefone;
+        public string Telefone;
         public string Estado;
         public string Cidade;
         public string Bairro;
-        public int Cep;
+        public string Cep;
         public string Logradouro;
         public int Numero;
         public string Complemento;
