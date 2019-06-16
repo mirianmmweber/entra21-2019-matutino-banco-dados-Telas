@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientesForm));
             this.label1 = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
@@ -42,7 +43,6 @@
             this.lblCep = new System.Windows.Forms.Label();
             this.lblLogradouro = new System.Windows.Forms.Label();
             this.lblNumero = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
             this.mtbSaldo = new System.Windows.Forms.MaskedTextBox();
             this.mtbCep = new System.Windows.Forms.MaskedTextBox();
             this.mtbTelefone = new System.Windows.Forms.MaskedTextBox();
@@ -72,236 +72,269 @@
             this.mtbPeso = new System.Windows.Forms.MaskedTextBox();
             this.mtbAltura = new System.Windows.Forms.MaskedTextBox();
             this.ckbNomeSujoSim = new System.Windows.Forms.CheckBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientes)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(978, 79);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(1058, 79);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 17);
+            this.label1.Size = new System.Drawing.Size(33, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID";
             // 
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(1016, 79);
-            this.lblId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblId.BackColor = System.Drawing.Color.Transparent;
+            this.lblId.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblId.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblId.Location = new System.Drawing.Point(1111, 79);
+            this.lblId.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(15, 17);
+            this.lblId.Size = new System.Drawing.Size(24, 25);
             this.lblId.TabIndex = 1;
             this.lblId.Text = "0";
             // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(16, 34);
-            this.lblNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNome.BackColor = System.Drawing.Color.Transparent;
+            this.lblNome.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(18, 34);
+            this.lblNome.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(47, 17);
+            this.lblNome.Size = new System.Drawing.Size(50, 16);
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome:";
             // 
             // lblPeso
             // 
             this.lblPeso.AutoSize = true;
-            this.lblPeso.Location = new System.Drawing.Point(19, 102);
-            this.lblPeso.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPeso.BackColor = System.Drawing.Color.Transparent;
+            this.lblPeso.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPeso.Location = new System.Drawing.Point(22, 102);
+            this.lblPeso.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblPeso.Name = "lblPeso";
-            this.lblPeso.Size = new System.Drawing.Size(39, 17);
+            this.lblPeso.Size = new System.Drawing.Size(41, 16);
             this.lblPeso.TabIndex = 3;
             this.lblPeso.Text = "Peso:";
             // 
             // lblAltura
             // 
             this.lblAltura.AutoSize = true;
-            this.lblAltura.Location = new System.Drawing.Point(15, 167);
-            this.lblAltura.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAltura.BackColor = System.Drawing.Color.Transparent;
+            this.lblAltura.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAltura.Location = new System.Drawing.Point(17, 167);
+            this.lblAltura.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblAltura.Name = "lblAltura";
-            this.lblAltura.Size = new System.Drawing.Size(47, 17);
+            this.lblAltura.Size = new System.Drawing.Size(52, 16);
             this.lblAltura.TabIndex = 4;
             this.lblAltura.Text = "Altura:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 229);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(17, 230);
+            this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 17);
+            this.label6.Size = new System.Drawing.Size(84, 16);
             this.label6.TabIndex = 5;
             this.label6.Text = "Nome Sujo?";
             // 
             // lblSaldo
             // 
             this.lblSaldo.AutoSize = true;
-            this.lblSaldo.Location = new System.Drawing.Point(15, 295);
-            this.lblSaldo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSaldo.BackColor = System.Drawing.Color.Transparent;
+            this.lblSaldo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaldo.Location = new System.Drawing.Point(17, 295);
+            this.lblSaldo.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblSaldo.Name = "lblSaldo";
-            this.lblSaldo.Size = new System.Drawing.Size(42, 17);
+            this.lblSaldo.Size = new System.Drawing.Size(45, 16);
             this.lblSaldo.TabIndex = 6;
             this.lblSaldo.Text = "Saldo";
             // 
             // lblComplemento
             // 
             this.lblComplemento.AutoSize = true;
-            this.lblComplemento.Location = new System.Drawing.Point(161, 420);
-            this.lblComplemento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblComplemento.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblComplemento.Location = new System.Drawing.Point(184, 420);
+            this.lblComplemento.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblComplemento.Name = "lblComplemento";
-            this.lblComplemento.Size = new System.Drawing.Size(97, 17);
+            this.lblComplemento.Size = new System.Drawing.Size(103, 16);
             this.lblComplemento.TabIndex = 7;
             this.lblComplemento.Text = "Complemento:";
             // 
             // lblTelefone
             // 
             this.lblTelefone.AutoSize = true;
-            this.lblTelefone.Location = new System.Drawing.Point(15, 360);
-            this.lblTelefone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTelefone.BackColor = System.Drawing.Color.Transparent;
+            this.lblTelefone.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefone.Location = new System.Drawing.Point(17, 360);
+            this.lblTelefone.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(62, 17);
+            this.lblTelefone.Size = new System.Drawing.Size(66, 16);
             this.lblTelefone.TabIndex = 8;
             this.lblTelefone.Text = "Telefone:";
             // 
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(160, 34);
-            this.lblEstado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEstado.BackColor = System.Drawing.Color.Transparent;
+            this.lblEstado.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado.Location = new System.Drawing.Point(183, 34);
+            this.lblEstado.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(51, 17);
+            this.lblEstado.Size = new System.Drawing.Size(55, 16);
             this.lblEstado.TabIndex = 9;
             this.lblEstado.Text = "Estado:";
             // 
             // lblBairro
             // 
             this.lblBairro.AutoSize = true;
-            this.lblBairro.Location = new System.Drawing.Point(160, 167);
-            this.lblBairro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBairro.BackColor = System.Drawing.Color.Transparent;
+            this.lblBairro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBairro.Location = new System.Drawing.Point(183, 167);
+            this.lblBairro.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Size = new System.Drawing.Size(45, 17);
+            this.lblBairro.Size = new System.Drawing.Size(51, 16);
             this.lblBairro.TabIndex = 10;
             this.lblBairro.Text = "Bairro:";
             // 
             // lblCep
             // 
             this.lblCep.AutoSize = true;
-            this.lblCep.Location = new System.Drawing.Point(161, 229);
-            this.lblCep.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCep.BackColor = System.Drawing.Color.Transparent;
+            this.lblCep.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCep.Location = new System.Drawing.Point(184, 230);
+            this.lblCep.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblCep.Name = "lblCep";
-            this.lblCep.Size = new System.Drawing.Size(30, 17);
+            this.lblCep.Size = new System.Drawing.Size(32, 16);
             this.lblCep.TabIndex = 11;
             this.lblCep.Text = "CEP";
             // 
             // lblLogradouro
             // 
             this.lblLogradouro.AutoSize = true;
-            this.lblLogradouro.Location = new System.Drawing.Point(161, 295);
-            this.lblLogradouro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLogradouro.BackColor = System.Drawing.Color.Transparent;
+            this.lblLogradouro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogradouro.Location = new System.Drawing.Point(184, 295);
+            this.lblLogradouro.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblLogradouro.Name = "lblLogradouro";
-            this.lblLogradouro.Size = new System.Drawing.Size(80, 17);
+            this.lblLogradouro.Size = new System.Drawing.Size(87, 16);
             this.lblLogradouro.TabIndex = 12;
             this.lblLogradouro.Text = "Logradouro:";
             // 
             // lblNumero
             // 
             this.lblNumero.AutoSize = true;
-            this.lblNumero.Location = new System.Drawing.Point(160, 360);
-            this.lblNumero.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNumero.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumero.Location = new System.Drawing.Point(183, 360);
+            this.lblNumero.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(58, 17);
+            this.lblNumero.Size = new System.Drawing.Size(63, 16);
             this.lblNumero.TabIndex = 13;
             this.lblNumero.Text = "Número:";
             // 
-            // txtNome
-            // 
-            this.txtNome.Location = new System.Drawing.Point(18, 55);
-            this.txtNome.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(116, 22);
-            this.txtNome.TabIndex = 15;
-            // 
             // mtbSaldo
             // 
-            this.mtbSaldo.Location = new System.Drawing.Point(18, 316);
-            this.mtbSaldo.Margin = new System.Windows.Forms.Padding(4);
+            this.mtbSaldo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtbSaldo.Location = new System.Drawing.Point(21, 316);
+            this.mtbSaldo.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.mtbSaldo.Mask = "$999999.99";
             this.mtbSaldo.Name = "mtbSaldo";
-            this.mtbSaldo.Size = new System.Drawing.Size(76, 22);
-            this.mtbSaldo.TabIndex = 16;
+            this.mtbSaldo.Size = new System.Drawing.Size(86, 23);
+            this.mtbSaldo.TabIndex = 4;
             // 
             // mtbCep
             // 
-            this.mtbCep.Location = new System.Drawing.Point(163, 250);
-            this.mtbCep.Margin = new System.Windows.Forms.Padding(4);
+            this.mtbCep.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtbCep.Location = new System.Drawing.Point(186, 250);
+            this.mtbCep.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.mtbCep.Mask = "99999-999";
             this.mtbCep.Name = "mtbCep";
-            this.mtbCep.Size = new System.Drawing.Size(76, 22);
-            this.mtbCep.TabIndex = 17;
+            this.mtbCep.Size = new System.Drawing.Size(86, 23);
+            this.mtbCep.TabIndex = 9;
             // 
             // mtbTelefone
             // 
-            this.mtbTelefone.Location = new System.Drawing.Point(18, 381);
-            this.mtbTelefone.Margin = new System.Windows.Forms.Padding(4);
+            this.mtbTelefone.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtbTelefone.Location = new System.Drawing.Point(21, 381);
+            this.mtbTelefone.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.mtbTelefone.Mask = "(99)9999-9999";
             this.mtbTelefone.Name = "mtbTelefone";
-            this.mtbTelefone.Size = new System.Drawing.Size(116, 22);
-            this.mtbTelefone.TabIndex = 20;
+            this.mtbTelefone.Size = new System.Drawing.Size(132, 23);
+            this.mtbTelefone.TabIndex = 5;
             // 
             // txtLogradouro
             // 
-            this.txtLogradouro.Location = new System.Drawing.Point(163, 316);
-            this.txtLogradouro.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLogradouro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLogradouro.Location = new System.Drawing.Point(186, 316);
+            this.txtLogradouro.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtLogradouro.Name = "txtLogradouro";
-            this.txtLogradouro.Size = new System.Drawing.Size(116, 22);
-            this.txtLogradouro.TabIndex = 21;
+            this.txtLogradouro.Size = new System.Drawing.Size(132, 23);
+            this.txtLogradouro.TabIndex = 10;
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(163, 381);
-            this.txtNumero.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNumero.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumero.Location = new System.Drawing.Point(186, 381);
+            this.txtNumero.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(78, 22);
-            this.txtNumero.TabIndex = 25;
+            this.txtNumero.Size = new System.Drawing.Size(89, 23);
+            this.txtNumero.TabIndex = 11;
             // 
             // txtComplemento
             // 
-            this.txtComplemento.Location = new System.Drawing.Point(163, 441);
-            this.txtComplemento.Margin = new System.Windows.Forms.Padding(4);
+            this.txtComplemento.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtComplemento.Location = new System.Drawing.Point(186, 441);
+            this.txtComplemento.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtComplemento.Name = "txtComplemento";
-            this.txtComplemento.Size = new System.Drawing.Size(116, 22);
-            this.txtComplemento.TabIndex = 26;
+            this.txtComplemento.Size = new System.Drawing.Size(132, 23);
+            this.txtComplemento.TabIndex = 12;
             // 
             // lblCidade
             // 
             this.lblCidade.AutoSize = true;
-            this.lblCidade.Location = new System.Drawing.Point(160, 102);
-            this.lblCidade.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCidade.BackColor = System.Drawing.Color.Transparent;
+            this.lblCidade.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCidade.Location = new System.Drawing.Point(183, 102);
+            this.lblCidade.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblCidade.Name = "lblCidade";
-            this.lblCidade.Size = new System.Drawing.Size(52, 17);
+            this.lblCidade.Size = new System.Drawing.Size(57, 16);
             this.lblCidade.TabIndex = 27;
             this.lblCidade.Text = "Cidade";
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(953, 433);
-            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExcluir.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnExcluir.Location = new System.Drawing.Point(1044, 436);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(88, 30);
-            this.btnExcluir.TabIndex = 29;
+            this.btnExcluir.Size = new System.Drawing.Size(101, 30);
+            this.btnExcluir.TabIndex = 14;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(953, 381);
-            this.btnSalvar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSalvar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnSalvar.Location = new System.Drawing.Point(1044, 398);
+            this.btnSalvar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(88, 30);
-            this.btnSalvar.TabIndex = 30;
+            this.btnSalvar.Size = new System.Drawing.Size(101, 30);
+            this.btnSalvar.TabIndex = 13;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -325,11 +358,11 @@
             this.ColumnLogradouro,
             this.ColumnNumero,
             this.ColumnComlemento});
-            this.dataGridViewClientes.Location = new System.Drawing.Point(336, 34);
-            this.dataGridViewClientes.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewClientes.Location = new System.Drawing.Point(338, 35);
+            this.dataGridViewClientes.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dataGridViewClientes.Name = "dataGridViewClientes";
             this.dataGridViewClientes.ReadOnly = true;
-            this.dataGridViewClientes.Size = new System.Drawing.Size(599, 429);
+            this.dataGridViewClientes.Size = new System.Drawing.Size(696, 429);
             this.dataGridViewClientes.TabIndex = 31;
             this.dataGridViewClientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewClientes_CellDoubleClick);
             // 
@@ -413,59 +446,76 @@
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(163, 188);
-            this.txtBairro.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBairro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBairro.Location = new System.Drawing.Point(186, 188);
+            this.txtBairro.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(116, 22);
-            this.txtBairro.TabIndex = 32;
+            this.txtBairro.Size = new System.Drawing.Size(132, 23);
+            this.txtBairro.TabIndex = 8;
             // 
             // txtCidade
             // 
-            this.txtCidade.Location = new System.Drawing.Point(163, 123);
-            this.txtCidade.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCidade.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCidade.Location = new System.Drawing.Point(186, 123);
+            this.txtCidade.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(116, 22);
-            this.txtCidade.TabIndex = 33;
+            this.txtCidade.Size = new System.Drawing.Size(132, 23);
+            this.txtCidade.TabIndex = 7;
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(163, 55);
-            this.txtEstado.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEstado.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEstado.Location = new System.Drawing.Point(186, 55);
+            this.txtEstado.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(116, 22);
-            this.txtEstado.TabIndex = 34;
+            this.txtEstado.Size = new System.Drawing.Size(132, 23);
+            this.txtEstado.TabIndex = 6;
             // 
             // mtbPeso
             // 
-            this.mtbPeso.Location = new System.Drawing.Point(18, 123);
+            this.mtbPeso.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtbPeso.Location = new System.Drawing.Point(21, 123);
             this.mtbPeso.Mask = "999.99";
             this.mtbPeso.Name = "mtbPeso";
-            this.mtbPeso.Size = new System.Drawing.Size(76, 22);
-            this.mtbPeso.TabIndex = 35;
+            this.mtbPeso.Size = new System.Drawing.Size(86, 23);
+            this.mtbPeso.TabIndex = 1;
             // 
             // mtbAltura
             // 
-            this.mtbAltura.Location = new System.Drawing.Point(18, 187);
+            this.mtbAltura.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtbAltura.Location = new System.Drawing.Point(21, 187);
             this.mtbAltura.Mask = "9.99";
             this.mtbAltura.Name = "mtbAltura";
-            this.mtbAltura.Size = new System.Drawing.Size(76, 22);
-            this.mtbAltura.TabIndex = 36;
+            this.mtbAltura.Size = new System.Drawing.Size(86, 23);
+            this.mtbAltura.TabIndex = 2;
             // 
             // ckbNomeSujoSim
             // 
             this.ckbNomeSujoSim.AutoSize = true;
-            this.ckbNomeSujoSim.Location = new System.Drawing.Point(19, 250);
+            this.ckbNomeSujoSim.BackColor = System.Drawing.Color.Transparent;
+            this.ckbNomeSujoSim.Location = new System.Drawing.Point(22, 250);
             this.ckbNomeSujoSim.Name = "ckbNomeSujoSim";
-            this.ckbNomeSujoSim.Size = new System.Drawing.Size(48, 21);
-            this.ckbNomeSujoSim.TabIndex = 37;
+            this.ckbNomeSujoSim.Size = new System.Drawing.Size(49, 21);
+            this.ckbNomeSujoSim.TabIndex = 3;
             this.ckbNomeSujoSim.Text = "Sim";
-            this.ckbNomeSujoSim.UseVisualStyleBackColor = true;
+            this.ckbNomeSujoSim.UseVisualStyleBackColor = false;
+            // 
+            // txtNome
+            // 
+            this.txtNome.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Location = new System.Drawing.Point(21, 55);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(132, 23);
+            this.txtNome.TabIndex = 0;
             // 
             // ClientesForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1063, 492);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1172, 487);
             this.Controls.Add(this.ckbNomeSujoSim);
             this.Controls.Add(this.mtbAltura);
             this.Controls.Add(this.mtbPeso);
@@ -497,10 +547,12 @@
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "ClientesForm";
-            this.Text = "ClientesForm";
+            this.Text = "Tela de cadastro de Clientes";
             this.Activated += new System.EventHandler(this.ClientesForm_Activated);
             this.Load += new System.EventHandler(this.ClientesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientes)).EndInit();
@@ -525,7 +577,6 @@
         private System.Windows.Forms.Label lblCep;
         private System.Windows.Forms.Label lblLogradouro;
         private System.Windows.Forms.Label lblNumero;
-        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.MaskedTextBox mtbSaldo;
         private System.Windows.Forms.MaskedTextBox mtbCep;
         private System.Windows.Forms.MaskedTextBox mtbTelefone;
@@ -555,5 +606,6 @@
         private System.Windows.Forms.MaskedTextBox mtbPeso;
         private System.Windows.Forms.MaskedTextBox mtbAltura;
         private System.Windows.Forms.CheckBox ckbNomeSujoSim;
+        private System.Windows.Forms.TextBox txtNome;
     }
 }

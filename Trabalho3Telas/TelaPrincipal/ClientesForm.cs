@@ -285,7 +285,7 @@ estado, cidade, bairro, cep,
 logradouro, numero, complemento)
 VALUES (@NOME, @PESO, @ALTURA, @NOME_SUJO, @SALDO, @TELEFONE,
 @ESTADO, @CIDADE, @BAIRRO, @CEP,
-@LOGRADOURO, @NUMERO, @COMPLEMENTO";
+@LOGRADOURO, @NUMERO, @COMPLEMENTO)";
 
             comando.Parameters.AddWithValue("@NOME", clientes.Nome);
             comando.Parameters.AddWithValue("@PESO", clientes.Peso);

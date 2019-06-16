@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PeixesForm));
             this.label1 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
@@ -53,10 +54,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(38, 42);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 20);
+            this.label1.Size = new System.Drawing.Size(33, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID";
             // 
@@ -66,7 +70,7 @@
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(112, 35);
-            this.btnSalvar.TabIndex = 1;
+            this.btnSalvar.TabIndex = 4;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -77,7 +81,7 @@
             this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(112, 35);
-            this.btnExcluir.TabIndex = 2;
+            this.btnExcluir.TabIndex = 5;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -85,50 +89,65 @@
             // lblNome
             // 
             this.lblNome.AutoSize = true;
+            this.lblNome.BackColor = System.Drawing.Color.Transparent;
+            this.lblNome.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.ForeColor = System.Drawing.Color.Transparent;
             this.lblNome.Location = new System.Drawing.Point(38, 90);
             this.lblNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(57, 20);
+            this.lblNome.Size = new System.Drawing.Size(57, 18);
             this.lblNome.TabIndex = 3;
             this.lblNome.Text = "Nome:";
             // 
             // lblRaca
             // 
             this.lblRaca.AutoSize = true;
+            this.lblRaca.BackColor = System.Drawing.Color.Transparent;
+            this.lblRaca.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRaca.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblRaca.Location = new System.Drawing.Point(40, 163);
             this.lblRaca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRaca.Name = "lblRaca";
-            this.lblRaca.Size = new System.Drawing.Size(52, 20);
+            this.lblRaca.Size = new System.Drawing.Size(51, 18);
             this.lblRaca.TabIndex = 4;
             this.lblRaca.Text = "Raça:";
             // 
             // lblPreco
             // 
             this.lblPreco.AutoSize = true;
+            this.lblPreco.BackColor = System.Drawing.Color.Transparent;
+            this.lblPreco.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreco.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblPreco.Location = new System.Drawing.Point(40, 243);
             this.lblPreco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPreco.Name = "lblPreco";
-            this.lblPreco.Size = new System.Drawing.Size(57, 20);
+            this.lblPreco.Size = new System.Drawing.Size(55, 18);
             this.lblPreco.TabIndex = 5;
             this.lblPreco.Text = "Preço:";
             // 
             // lblQuantidade
             // 
             this.lblQuantidade.AutoSize = true;
+            this.lblQuantidade.BackColor = System.Drawing.Color.Transparent;
+            this.lblQuantidade.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantidade.ForeColor = System.Drawing.Color.White;
             this.lblQuantidade.Location = new System.Drawing.Point(40, 324);
             this.lblQuantidade.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuantidade.Name = "lblQuantidade";
-            this.lblQuantidade.Size = new System.Drawing.Size(102, 20);
+            this.lblQuantidade.Size = new System.Drawing.Size(101, 18);
             this.lblQuantidade.TabIndex = 6;
             this.lblQuantidade.Text = "Quantidade:";
             // 
             // lblId
             // 
             this.lblId.AutoSize = true;
+            this.lblId.BackColor = System.Drawing.Color.Transparent;
+            this.lblId.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblId.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblId.Location = new System.Drawing.Point(83, 42);
             this.lblId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(17, 20);
+            this.lblId.Size = new System.Drawing.Size(24, 25);
             this.lblId.TabIndex = 7;
             this.lblId.Text = "0";
             // 
@@ -138,7 +157,7 @@
             this.txtNome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(230, 26);
-            this.txtNome.TabIndex = 8;
+            this.txtNome.TabIndex = 0;
             // 
             // cbRaca
             // 
@@ -158,7 +177,7 @@
             this.cbRaca.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbRaca.Name = "cbRaca";
             this.cbRaca.Size = new System.Drawing.Size(232, 28);
-            this.cbRaca.TabIndex = 9;
+            this.cbRaca.TabIndex = 1;
             // 
             // mtbPreco
             // 
@@ -167,7 +186,7 @@
             this.mtbPreco.Mask = "999999.99";
             this.mtbPreco.Name = "mtbPreco";
             this.mtbPreco.Size = new System.Drawing.Size(99, 26);
-            this.mtbPreco.TabIndex = 10;
+            this.mtbPreco.TabIndex = 2;
             // 
             // nudQuantidade
             // 
@@ -175,7 +194,7 @@
             this.nudQuantidade.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nudQuantidade.Name = "nudQuantidade";
             this.nudQuantidade.Size = new System.Drawing.Size(102, 26);
-            this.nudQuantidade.TabIndex = 11;
+            this.nudQuantidade.TabIndex = 3;
             // 
             // dataGridViewPeixes
             // 
@@ -230,6 +249,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(929, 474);
             this.Controls.Add(this.dataGridViewPeixes);
             this.Controls.Add(this.nudQuantidade);
@@ -245,9 +266,10 @@
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "PeixesForm";
-            this.Text = "PeixesForm";
+            this.Text = "Tela de Cadastro Peixes";
             this.Activated += new System.EventHandler(this.PeixesForm_Activated);
             this.Load += new System.EventHandler(this.PeixesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidade)).EndInit();

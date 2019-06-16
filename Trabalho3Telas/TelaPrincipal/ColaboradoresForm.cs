@@ -296,5 +296,10 @@ WHERE id = @ID";
         {
             AtualizarTabela();
         }
+
+        private void lblProgramador_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
