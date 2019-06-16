@@ -1,4 +1,5 @@
-﻿CREATE TABLE peixes (
+﻿DROP TABLE peixes;
+CREATE TABLE peixes (
 id INT PRIMARY KEY IDENTITY (1,1),
 nome VARCHAR(40),
 raca VARCHAR(50),

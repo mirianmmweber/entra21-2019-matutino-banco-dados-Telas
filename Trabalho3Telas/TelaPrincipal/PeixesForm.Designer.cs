@@ -69,6 +69,7 @@
             this.btnSalvar.TabIndex = 1;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnExcluir
             // 
@@ -79,6 +80,7 @@
             this.btnExcluir.TabIndex = 2;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // lblNome
             // 
@@ -141,6 +143,17 @@
             // cbRaca
             // 
             this.cbRaca.FormattingEnabled = true;
+            this.cbRaca.Items.AddRange(new object[] {
+            "GoldFish",
+            "Neon Chinês",
+            "Tetras",
+            "Dânios",
+            "Beta",
+            "Molly",
+            "Piapara",
+            "Pirarucu",
+            "Robalo",
+            "Matrinxã"});
             this.cbRaca.Location = new System.Drawing.Point(40, 188);
             this.cbRaca.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbRaca.Name = "cbRaca";
@@ -180,6 +193,7 @@
             this.dataGridViewPeixes.ReadOnly = true;
             this.dataGridViewPeixes.Size = new System.Drawing.Size(539, 333);
             this.dataGridViewPeixes.TabIndex = 12;
+            this.dataGridViewPeixes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPeixes_CellContentClick);
             // 
             // ColumnId
             // 
@@ -233,6 +247,8 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "PeixesForm";
             this.Text = "PeixesForm";
+            this.Activated += new System.EventHandler(this.PeixesForm_Activated);
+            this.Load += new System.EventHandler(this.PeixesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidade)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPeixes)).EndInit();
             this.ResumeLayout(false);
