@@ -164,7 +164,7 @@
             // 
             this.mtbPreco.Location = new System.Drawing.Point(43, 268);
             this.mtbPreco.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.mtbPreco.Mask = "9999999.99";
+            this.mtbPreco.Mask = "999999.99";
             this.mtbPreco.Name = "mtbPreco";
             this.mtbPreco.Size = new System.Drawing.Size(99, 26);
             this.mtbPreco.TabIndex = 10;
@@ -194,6 +194,7 @@
             this.dataGridViewPeixes.Size = new System.Drawing.Size(539, 333);
             this.dataGridViewPeixes.TabIndex = 12;
             this.dataGridViewPeixes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPeixes_CellContentClick);
+            this.dataGridViewPeixes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPeixes_CellDoubleClick);
             // 
             // ColumnId
             // 

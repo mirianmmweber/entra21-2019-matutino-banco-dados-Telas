@@ -10,8 +10,8 @@ namespace TelaPrincipal
     {
         public int Id;
         public string Nome;
-        public double Peso;
-        public double Altura;
+        public decimal Peso;
+        public decimal Altura;
         public bool NomeSujo;
         public decimal Saldo;
         public int Telefone;

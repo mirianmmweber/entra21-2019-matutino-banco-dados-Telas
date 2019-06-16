@@ -68,7 +68,6 @@ WHERE id = @ID";
         {
             Peixes peixes = new Peixes();
             peixes.Nome = "";
-            peixes.Nome = "";
             try
             {
                 peixes.Nome = txtNome.Text;
@@ -85,6 +84,10 @@ WHERE id = @ID";
             {
                 MessageBox.Show("Selecione uma Raça");
                 return;
+            }
+            else
+            {
+                peixes.Raca = cbRaca.SelectedItem.ToString();
             }
 
             peixes.Preco = 0;
@@ -170,6 +173,52 @@ VALUES (@NOME, @RACA, @PRECO, @QUANTIDADE)";
 
         private void dataGridViewPeixes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            
+        }
+
+        private void PeixesForm_Load(object sender, EventArgs e)
+        {
+            AtualizarTabela();
+
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            if(dataGridViewPeixes.SelectedRows.Count ==0)
+            {
+                MessageBox.Show("Cadastre Peixes");
+                return;
+            }
+
+            DialogResult caixaDialogo = MessageBox.Show("Deseja realmente apagar?", "AVISO", MessageBoxButtons.YesNo);
+
+            if(caixaDialogo == DialogResult.Yes)
+            {
+                SqlConnection conexao = new SqlConnection();
+                conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\germa\Documents\TrabalhoCSharp.mdf;Integrated Security=True;Connect Timeout=30";
+                conexao.Open();
+
+                SqlCommand comando = new SqlCommand();
+                comando.Connection = conexao;
+                comando.CommandText = @"DELETE FROM peixes WHERE id = @ID";
+
+                int id = Convert.ToInt32(dataGridViewPeixes.CurrentRow.Cells[0].Value);
+                comando.Parameters.AddWithValue("@ID", id);
+                comando.ExecuteNonQuery();
+
+                conexao.Close();
+                AtualizarTabela();
+                LimparCampos();
+            }
+        }
+
+        private void PeixesForm_Activated(object sender, EventArgs e)
+        {
+            AtualizarTabela();
+        }
+
+        private void dataGridViewPeixes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
             int id = Convert.ToInt32(dataGridViewPeixes.CurrentRow.Cells[0].Value);
 
             SqlConnection conexao = new SqlConnection();
@@ -200,47 +249,6 @@ WHERE id = @ID";
             nudQuantidade.Value = peixes.Quantidade;
 
             conexao.Close();
-        }
-
-        private void PeixesForm_Load(object sender, EventArgs e)
-        {
-            AtualizarTabela();
-
-        }
-
-        private void btnExcluir_Click(object sender, EventArgs e)
-        {
-            if(dataGridViewPeixes.SelectedRows.Count ==0)
-            {
-                MessageBox.Show("Cadastre Peixes");
-                return;
-            }
-
-            DialogResult caixaDialogo = MessageBox.Show("Deseja realmente apagar?", "AVISO", MessageBoxButtons.YesNo);
-
-            if(caixaDialogo == DialogResult.Yes)
-            {
-                SqlConnection conexao = new SqlConnection();
-                conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\germa\Documents\TrabalhoCSharp.mdf;Integrated Security=True;Connect Timeout=30";
-                conexao.Open();
-
-                SqlCommand comando = new SqlCommand();
-                comando.Connection = conexao;
-                comando.CommandText = @"DELET FROM peixes WHERE id = @ID";
-
-                int id = Convert.ToInt32(dataGridViewPeixes.CurrentRow.Cells[0].Value);
-                comando.Parameters.AddWithValue("@ID", id);
-                comando.ExecuteNonQuery();
-
-                conexao.Close();
-                AtualizarTabela();
-                LimparCampos();
-            }
-        }
-
-        private void PeixesForm_Activated(object sender, EventArgs e)
-        {
-            AtualizarTabela();
         }
     }
 }

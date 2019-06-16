@@ -21,6 +21,7 @@ programador BIT
 
 SELECT * FROM colaboradores;
 
+DROP TABLE clientes;
 CREATE TABLE clientes (
 id INT PRIMARY KEY IDENTITY (1,10),
 nome VARCHAR(100),
@@ -28,11 +29,11 @@ peso DECIMAL(5,2),
 altura DECIMAL(3,2),
 nome_sujo BIT,
 saldo DECIMAL(8,2),
-telefone INT,
+telefone VARCHAR(14),
 estado VARCHAR(100),
 cidade VARCHAR(100),
 bairro VARCHAR(100),
-cep INT,
+cep VARCHAR(9),
 logradouro VARCHAR(100),
 numero INT,
 complemento TEXT
