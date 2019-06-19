@@ -52,6 +52,7 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.ckbProgramadorSim = new System.Windows.Forms.CheckBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewColaboradores)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +61,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(55, 45);
+            this.label1.Location = new System.Drawing.Point(450, 72);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 25);
@@ -71,7 +72,7 @@
             // 
             this.lblId.AutoSize = true;
             this.lblId.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(123, 45);
+            this.lblId.Location = new System.Drawing.Point(503, 72);
             this.lblId.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(24, 25);
@@ -82,11 +83,11 @@
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
-            this.lblNome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(27, 92);
+            this.lblNome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(27, 58);
             this.lblNome.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(61, 19);
+            this.lblNome.Size = new System.Drawing.Size(62, 19);
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome:";
             // 
@@ -94,11 +95,11 @@
             // 
             this.lblCpf.AutoSize = true;
             this.lblCpf.BackColor = System.Drawing.Color.Transparent;
-            this.lblCpf.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCpf.Location = new System.Drawing.Point(27, 175);
+            this.lblCpf.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCpf.Location = new System.Drawing.Point(27, 136);
             this.lblCpf.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblCpf.Name = "lblCpf";
-            this.lblCpf.Size = new System.Drawing.Size(42, 19);
+            this.lblCpf.Size = new System.Drawing.Size(44, 19);
             this.lblCpf.TabIndex = 3;
             this.lblCpf.Text = "CPF:";
             // 
@@ -106,11 +107,11 @@
             // 
             this.lblSalario.AutoSize = true;
             this.lblSalario.BackColor = System.Drawing.Color.Transparent;
-            this.lblSalario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalario.Location = new System.Drawing.Point(27, 274);
+            this.lblSalario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalario.Location = new System.Drawing.Point(27, 209);
             this.lblSalario.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblSalario.Name = "lblSalario";
-            this.lblSalario.Size = new System.Drawing.Size(66, 19);
+            this.lblSalario.Size = new System.Drawing.Size(67, 19);
             this.lblSalario.TabIndex = 4;
             this.lblSalario.Text = "Salário:";
             // 
@@ -118,11 +119,11 @@
             // 
             this.lblCargo.AutoSize = true;
             this.lblCargo.BackColor = System.Drawing.Color.Transparent;
-            this.lblCargo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCargo.Location = new System.Drawing.Point(276, 92);
+            this.lblCargo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCargo.Location = new System.Drawing.Point(230, 58);
             this.lblCargo.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblCargo.Name = "lblCargo";
-            this.lblCargo.Size = new System.Drawing.Size(62, 19);
+            this.lblCargo.Size = new System.Drawing.Size(64, 19);
             this.lblCargo.TabIndex = 5;
             this.lblCargo.Text = "Cargo:";
             // 
@@ -130,8 +131,8 @@
             // 
             this.lblSexo.AutoSize = true;
             this.lblSexo.BackColor = System.Drawing.Color.Transparent;
-            this.lblSexo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSexo.Location = new System.Drawing.Point(276, 175);
+            this.lblSexo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSexo.Location = new System.Drawing.Point(230, 136);
             this.lblSexo.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblSexo.Name = "lblSexo";
             this.lblSexo.Size = new System.Drawing.Size(50, 19);
@@ -142,8 +143,8 @@
             // 
             this.lblProgramador.AutoSize = true;
             this.lblProgramador.BackColor = System.Drawing.Color.Transparent;
-            this.lblProgramador.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProgramador.Location = new System.Drawing.Point(276, 274);
+            this.lblProgramador.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProgramador.Location = new System.Drawing.Point(230, 209);
             this.lblProgramador.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblProgramador.Name = "lblProgramador";
             this.lblProgramador.Size = new System.Drawing.Size(122, 19);
@@ -153,7 +154,7 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(31, 116);
+            this.txtNome.Location = new System.Drawing.Point(31, 88);
             this.txtNome.Margin = new System.Windows.Forms.Padding(5);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(164, 27);
@@ -161,7 +162,7 @@
             // 
             // mtbCpf
             // 
-            this.mtbCpf.Location = new System.Drawing.Point(31, 201);
+            this.mtbCpf.Location = new System.Drawing.Point(31, 160);
             this.mtbCpf.Margin = new System.Windows.Forms.Padding(5);
             this.mtbCpf.Mask = "999,999,999-99";
             this.mtbCpf.Name = "mtbCpf";
@@ -170,7 +171,7 @@
             // 
             // mtbSalario
             // 
-            this.mtbSalario.Location = new System.Drawing.Point(31, 298);
+            this.mtbSalario.Location = new System.Drawing.Point(31, 233);
             this.mtbSalario.Margin = new System.Windows.Forms.Padding(5);
             this.mtbSalario.Mask = "999999.99";
             this.mtbSalario.Name = "mtbSalario";
@@ -179,7 +180,7 @@
             // 
             // txtCargo
             // 
-            this.txtCargo.Location = new System.Drawing.Point(280, 116);
+            this.txtCargo.Location = new System.Drawing.Point(234, 88);
             this.txtCargo.Margin = new System.Windows.Forms.Padding(5);
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(164, 27);
@@ -195,7 +196,7 @@
             "Homem Trans",
             "Homem Cis",
             "Gênero Fluido"});
-            this.cbSexo.Location = new System.Drawing.Point(280, 199);
+            this.cbSexo.Location = new System.Drawing.Point(234, 160);
             this.cbSexo.Margin = new System.Windows.Forms.Padding(5);
             this.cbSexo.Name = "cbSexo";
             this.cbSexo.Size = new System.Drawing.Size(164, 29);
@@ -213,11 +214,11 @@
             this.ColumnCargo,
             this.ColumnSexo,
             this.ColumnProgramador});
-            this.dataGridViewColaboradores.Location = new System.Drawing.Point(551, 45);
+            this.dataGridViewColaboradores.Location = new System.Drawing.Point(21, 314);
             this.dataGridViewColaboradores.Margin = new System.Windows.Forms.Padding(5);
             this.dataGridViewColaboradores.Name = "dataGridViewColaboradores";
             this.dataGridViewColaboradores.ReadOnly = true;
-            this.dataGridViewColaboradores.Size = new System.Drawing.Size(644, 384);
+            this.dataGridViewColaboradores.Size = new System.Drawing.Size(535, 158);
             this.dataGridViewColaboradores.TabIndex = 14;
             this.dataGridViewColaboradores.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewColaboradores_CellDoubleClick);
             // 
@@ -260,7 +261,7 @@
             // btnSalvar
             // 
             this.btnSalvar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSalvar.Location = new System.Drawing.Point(31, 394);
+            this.btnSalvar.Location = new System.Drawing.Point(431, 209);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(5);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(125, 37);
@@ -272,7 +273,7 @@
             // btnExcluir
             // 
             this.btnExcluir.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExcluir.Location = new System.Drawing.Point(319, 394);
+            this.btnExcluir.Location = new System.Drawing.Point(431, 256);
             this.btnExcluir.Margin = new System.Windows.Forms.Padding(5);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(125, 37);
@@ -285,20 +286,29 @@
             // 
             this.ckbProgramadorSim.AutoSize = true;
             this.ckbProgramadorSim.BackColor = System.Drawing.Color.Transparent;
-            this.ckbProgramadorSim.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckbProgramadorSim.Location = new System.Drawing.Point(280, 296);
+            this.ckbProgramadorSim.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbProgramadorSim.Location = new System.Drawing.Point(234, 237);
             this.ckbProgramadorSim.Name = "ckbProgramadorSim";
             this.ckbProgramadorSim.Size = new System.Drawing.Size(56, 23);
             this.ckbProgramadorSim.TabIndex = 5;
             this.ckbProgramadorSim.Text = "Sim";
             this.ckbProgramadorSim.UseVisualStyleBackColor = false;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Location = new System.Drawing.Point(21, 28);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(387, 265);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Dados Pessoais";
+            // 
             // ColaboradoresForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1224, 465);
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.ClientSize = new System.Drawing.Size(587, 513);
             this.Controls.Add(this.ckbProgramadorSim);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnSalvar);
@@ -316,6 +326,7 @@
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
@@ -354,5 +365,6 @@
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.CheckBox ckbProgramadorSim;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

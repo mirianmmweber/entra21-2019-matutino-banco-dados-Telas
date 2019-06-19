@@ -23,6 +23,7 @@ namespace TelaPrincipal
             if (lblId.Text == "0")
             {
                 Inserir();
+                AtualizarTabela();
             }
             else
             {
@@ -36,11 +37,14 @@ namespace TelaPrincipal
             peixes.Id = Convert.ToInt32(lblId.Text);
             peixes.Nome = txtNome.Text;
             peixes.Raca = cbRaca.SelectedItem.ToString();
-            peixes.Preco = Convert.ToDecimal(mtbPreco.Text.Replace("R$", ""));
+            string preco = mtbPreco.Text;
+            preco = preco.Replace("R$", "");
+            preco = preco.Replace(" ", "");
+            peixes.Preco = Convert.ToDecimal(preco);
             peixes.Quantidade = Convert.ToInt32(nudQuantidade.Value);
 
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\germa\Documents\TrabalhoCSharp.mdf;Integrated Security=True;Connect Timeout=30";
+            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=T:\Documentos\Exercicios.mdf;Integrated Security=True;Connect Timeout=30";
             conexao.Open();
 
             SqlCommand comando = new SqlCommand();
@@ -117,7 +121,7 @@ WHERE id = @ID";
 
             //Desenvolvimento de tela
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\germa\Documents\TrabalhoCSharp.mdf;Integrated Security=True;Connect Timeout=30";
+            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=T:\Documentos\Exercicios.mdf;Integrated Security=True;Connect Timeout=30";
             conexao.Open();
 
             SqlCommand comando = new SqlCommand();
@@ -147,7 +151,7 @@ VALUES (@NOME, @RACA, @PRECO, @QUANTIDADE)";
         private void AtualizarTabela()
         {
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\germa\Documents\TrabalhoCSharp.mdf;Integrated Security=True;Connect Timeout=30";
+            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=T:\Documentos\Exercicios.mdf;Integrated Security=True;Connect Timeout=30";
             conexao.Open();
 
             SqlCommand comando = new SqlCommand();
@@ -195,7 +199,7 @@ VALUES (@NOME, @RACA, @PRECO, @QUANTIDADE)";
             if(caixaDialogo == DialogResult.Yes)
             {
                 SqlConnection conexao = new SqlConnection();
-                conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\germa\Documents\TrabalhoCSharp.mdf;Integrated Security=True;Connect Timeout=30";
+                conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=T:\Documentos\Exercicios.mdf;Integrated Security=True;Connect Timeout=30";
                 conexao.Open();
 
                 SqlCommand comando = new SqlCommand();
@@ -222,7 +226,7 @@ VALUES (@NOME, @RACA, @PRECO, @QUANTIDADE)";
             int id = Convert.ToInt32(dataGridViewPeixes.CurrentRow.Cells[0].Value);
 
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\germa\Documents\TrabalhoCSharp.mdf;Integrated Security=True;Connect Timeout=30";
+            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=T:\Documentos\Exercicios.mdf;Integrated Security=True;Connect Timeout=30";
             conexao.Open();
 
             SqlCommand comando = new SqlCommand();
@@ -245,7 +249,7 @@ WHERE id = @ID";
             lblId.Text = peixes.Id.ToString();
             txtNome.Text = peixes.Nome;
             cbRaca.SelectedItem = peixes.Raca;
-            mtbPreco.Text = peixes.Preco.ToString();
+            mtbPreco.Text = peixes.Preco.ToString("000000.00");
             nudQuantidade.Value = peixes.Quantidade;
 
             conexao.Close();

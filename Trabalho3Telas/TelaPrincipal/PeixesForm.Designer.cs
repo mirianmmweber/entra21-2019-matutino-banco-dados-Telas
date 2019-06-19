@@ -47,8 +47,10 @@
             this.ColumnRaca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPreco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnQuantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPeixes)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -57,7 +59,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(38, 42);
+            this.label1.Location = new System.Drawing.Point(475, 68);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 25);
@@ -66,7 +68,7 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(40, 398);
+            this.btnSalvar.Location = new System.Drawing.Point(457, 140);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(112, 35);
@@ -77,7 +79,7 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(758, 398);
+            this.btnExcluir.Location = new System.Drawing.Point(457, 185);
             this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(112, 35);
@@ -90,9 +92,9 @@
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
-            this.lblNome.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.Transparent;
-            this.lblNome.Location = new System.Drawing.Point(38, 90);
+            this.lblNome.Location = new System.Drawing.Point(11, 41);
             this.lblNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(57, 18);
@@ -103,9 +105,9 @@
             // 
             this.lblRaca.AutoSize = true;
             this.lblRaca.BackColor = System.Drawing.Color.Transparent;
-            this.lblRaca.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRaca.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRaca.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblRaca.Location = new System.Drawing.Point(40, 163);
+            this.lblRaca.Location = new System.Drawing.Point(11, 105);
             this.lblRaca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRaca.Name = "lblRaca";
             this.lblRaca.Size = new System.Drawing.Size(51, 18);
@@ -116,12 +118,12 @@
             // 
             this.lblPreco.AutoSize = true;
             this.lblPreco.BackColor = System.Drawing.Color.Transparent;
-            this.lblPreco.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreco.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPreco.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPreco.Location = new System.Drawing.Point(40, 243);
+            this.lblPreco.Location = new System.Drawing.Point(208, 41);
             this.lblPreco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPreco.Name = "lblPreco";
-            this.lblPreco.Size = new System.Drawing.Size(55, 18);
+            this.lblPreco.Size = new System.Drawing.Size(56, 18);
             this.lblPreco.TabIndex = 5;
             this.lblPreco.Text = "Preço:";
             // 
@@ -129,9 +131,9 @@
             // 
             this.lblQuantidade.AutoSize = true;
             this.lblQuantidade.BackColor = System.Drawing.Color.Transparent;
-            this.lblQuantidade.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantidade.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuantidade.ForeColor = System.Drawing.Color.White;
-            this.lblQuantidade.Location = new System.Drawing.Point(40, 324);
+            this.lblQuantidade.Location = new System.Drawing.Point(208, 105);
             this.lblQuantidade.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuantidade.Name = "lblQuantidade";
             this.lblQuantidade.Size = new System.Drawing.Size(101, 18);
@@ -144,7 +146,7 @@
             this.lblId.BackColor = System.Drawing.Color.Transparent;
             this.lblId.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblId.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblId.Location = new System.Drawing.Point(83, 42);
+            this.lblId.Location = new System.Drawing.Point(505, 68);
             this.lblId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(24, 25);
@@ -153,10 +155,10 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(42, 114);
+            this.txtNome.Location = new System.Drawing.Point(14, 64);
             this.txtNome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(230, 26);
+            this.txtNome.Size = new System.Drawing.Size(133, 26);
             this.txtNome.TabIndex = 0;
             // 
             // cbRaca
@@ -173,15 +175,15 @@
             "Pirarucu",
             "Robalo",
             "Matrinxã"});
-            this.cbRaca.Location = new System.Drawing.Point(40, 188);
+            this.cbRaca.Location = new System.Drawing.Point(14, 128);
             this.cbRaca.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbRaca.Name = "cbRaca";
-            this.cbRaca.Size = new System.Drawing.Size(232, 28);
+            this.cbRaca.Size = new System.Drawing.Size(133, 28);
             this.cbRaca.TabIndex = 1;
             // 
             // mtbPreco
             // 
-            this.mtbPreco.Location = new System.Drawing.Point(43, 268);
+            this.mtbPreco.Location = new System.Drawing.Point(211, 64);
             this.mtbPreco.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.mtbPreco.Mask = "999999.99";
             this.mtbPreco.Name = "mtbPreco";
@@ -190,7 +192,7 @@
             // 
             // nudQuantidade
             // 
-            this.nudQuantidade.Location = new System.Drawing.Point(40, 349);
+            this.nudQuantidade.Location = new System.Drawing.Point(211, 128);
             this.nudQuantidade.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nudQuantidade.Name = "nudQuantidade";
             this.nudQuantidade.Size = new System.Drawing.Size(102, 26);
@@ -207,10 +209,10 @@
             this.ColumnRaca,
             this.ColumnPreco,
             this.ColumnQuantidade});
-            this.dataGridViewPeixes.Location = new System.Drawing.Point(331, 42);
+            this.dataGridViewPeixes.Location = new System.Drawing.Point(26, 254);
             this.dataGridViewPeixes.Name = "dataGridViewPeixes";
             this.dataGridViewPeixes.ReadOnly = true;
-            this.dataGridViewPeixes.Size = new System.Drawing.Size(539, 333);
+            this.dataGridViewPeixes.Size = new System.Drawing.Size(543, 190);
             this.dataGridViewPeixes.TabIndex = 12;
             this.dataGridViewPeixes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPeixes_CellContentClick);
             this.dataGridViewPeixes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPeixes_CellDoubleClick);
@@ -245,26 +247,38 @@
             this.ColumnQuantidade.Name = "ColumnQuantidade";
             this.ColumnQuantidade.ReadOnly = true;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.lblNome);
+            this.groupBox1.Controls.Add(this.nudQuantidade);
+            this.groupBox1.Controls.Add(this.txtNome);
+            this.groupBox1.Controls.Add(this.mtbPreco);
+            this.groupBox1.Controls.Add(this.lblQuantidade);
+            this.groupBox1.Controls.Add(this.lblRaca);
+            this.groupBox1.Controls.Add(this.cbRaca);
+            this.groupBox1.Controls.Add(this.lblPreco);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox1.Location = new System.Drawing.Point(26, 27);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(398, 193);
+            this.groupBox1.TabIndex = 13;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Dados";
+            // 
             // PeixesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(929, 474);
+            this.ClientSize = new System.Drawing.Size(596, 481);
             this.Controls.Add(this.dataGridViewPeixes);
-            this.Controls.Add(this.nudQuantidade);
-            this.Controls.Add(this.mtbPreco);
-            this.Controls.Add(this.cbRaca);
-            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.lblId);
-            this.Controls.Add(this.lblQuantidade);
-            this.Controls.Add(this.lblPreco);
-            this.Controls.Add(this.lblRaca);
-            this.Controls.Add(this.lblNome);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -274,6 +288,8 @@
             this.Load += new System.EventHandler(this.PeixesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidade)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPeixes)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -299,5 +315,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnRaca;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPreco;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnQuantidade;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

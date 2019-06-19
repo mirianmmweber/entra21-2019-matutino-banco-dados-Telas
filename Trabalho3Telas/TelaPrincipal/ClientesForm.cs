@@ -50,7 +50,10 @@ namespace TelaPrincipal
             {
                 clientes.NomeSujo = false;
             }
-            clientes.Saldo = Convert.ToDecimal(mtbSaldo.Text);
+            string saldo = mtbSaldo.Text;
+            saldo = saldo.Replace("R$", "");
+            saldo = saldo.Replace(" ", "");
+            clientes.Saldo = Convert.ToDecimal(saldo);
             clientes.Telefone = mtbTelefone.Text;
             clientes.Estado = txtEstado.Text;
             clientes.Cidade = txtCidade.Text;
@@ -61,7 +64,7 @@ namespace TelaPrincipal
             clientes.Complemento = txtComplemento.Text;
 
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\germa\Documents\TrabalhoCSharp.mdf;Integrated Security=True;Connect Timeout=30";
+            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=T:\Documentos\Exercicios.mdf;Integrated Security=True;Connect Timeout=30";
             conexao.Open();
 
             SqlCommand comando = new SqlCommand();
@@ -274,7 +277,7 @@ WHERE id = @ID";
 
             //Desenvolvimento de cadastro
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\germa\Documents\TrabalhoCSharp.mdf;Integrated Security=True;Connect Timeout=30";
+            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=T:\Documentos\Exercicios.mdf;Integrated Security=True;Connect Timeout=30";
             conexao.Open();
 
             SqlCommand comando = new SqlCommand();
@@ -328,7 +331,7 @@ VALUES (@NOME, @PESO, @ALTURA, @NOME_SUJO, @SALDO, @TELEFONE,
         private void AtualizarTabela()
         {
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\germa\Documents\TrabalhoCSharp.mdf;Integrated Security=True;Connect Timeout=30";
+            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=T:\Documentos\Exercicios.mdf;Integrated Security=True;Connect Timeout=30";
             conexao.Open();
 
             SqlCommand comando = new SqlCommand();
@@ -366,7 +369,7 @@ VALUES (@NOME, @PESO, @ALTURA, @NOME_SUJO, @SALDO, @TELEFONE,
             int id = Convert.ToInt32(dataGridViewClientes.CurrentRow.Cells[0].Value);
 
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\germa\Documents\TrabalhoCSharp.mdf;Integrated Security=True;Connect Timeout=30";
+            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=T:\Documentos\Exercicios.mdf;Integrated Security=True;Connect Timeout=30";
             conexao.Open();
 
             SqlCommand comando = new SqlCommand();
@@ -406,7 +409,7 @@ WHERE id = @ID";
             {
                 clientes.NomeSujo = false;
             }
-            mtbSaldo.Text = clientes.Saldo.ToString();
+            mtbSaldo.Text = clientes.Saldo.ToString("000000.00");
             mtbTelefone.Text = clientes.Telefone;
             txtEstado.Text = clientes.Estado;
             txtCidade.Text = clientes.Cidade;
@@ -437,10 +440,11 @@ WHERE id = @ID";
             if (caixaDialogo == DialogResult.Yes)
             {
                 SqlConnection conexao = new SqlConnection();
-                conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\germa\Documents\TrabalhoCSharp.mdf;Integrated Security=True;Connect Timeout=30";
+                conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=T:\Documentos\Exercicios.mdf;Integrated Security=True;Connect Timeout=30";
                 conexao.Open();
 
                 SqlCommand comando = new SqlCommand();
+                comando.Connection = conexao;
                 comando.CommandText = "DELETE FROM clientes WHERE id = @ID";
 
                 int id = Convert.ToInt32(dataGridViewClientes.CurrentRow.Cells[0].Value);

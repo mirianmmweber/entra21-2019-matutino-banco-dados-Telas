@@ -36,7 +36,10 @@ namespace TelaPrincipal
             colaboradores.Id = Convert.ToInt32(lblId.Text);
             colaboradores.Nome = txtNome.Text;
             colaboradores.Cpf = mtbCpf.Text;
-            colaboradores.Salario = Convert.ToDecimal(mtbSalario.Text.Replace("R$", ""));
+            string salario = mtbSalario.Text;
+            salario = salario.Replace("R$", "");
+            salario = salario.Replace(" ", "");
+            colaboradores.Salario = Convert.ToDecimal(salario);
             colaboradores.Sexo = cbSexo.SelectedItem.ToString();
             colaboradores.Cargo = txtCargo.Text;
             if (ckbProgramadorSim.Checked)
@@ -48,7 +51,7 @@ namespace TelaPrincipal
                 colaboradores.Programador = false;
             }
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\germa\Documents\TrabalhoCSharp.mdf;Integrated Security=True;Connect Timeout=30";
+            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=T:\Documentos\Exercicios.mdf;Integrated Security=True;Connect Timeout=30";
             conexao.Open();
 
             SqlCommand comando = new SqlCommand();
@@ -152,7 +155,7 @@ WHERE id = @ID";
 
             //Desenvolvimento da tela de cadastro
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\germa\Documents\TrabalhoCSharp.mdf;Integrated Security=True;Connect Timeout=30";
+            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=T:\Documentos\Exercicios.mdf;Integrated Security=True;Connect Timeout=30";
             conexao.Open();
 
             SqlCommand comando = new SqlCommand();
@@ -187,7 +190,7 @@ VALUES (@NOME, @CPF, @SALARIO, @SEXO, @CARGO, @PROGRAMADOR)";
         private void AtualizarTabela()
         {
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\germa\Documents\TrabalhoCSharp.mdf;Integrated Security=True;Connect Timeout=30";
+            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=T:\Documentos\Exercicios.mdf;Integrated Security=True;Connect Timeout=30";
             conexao.Open();
 
             SqlCommand comando = new SqlCommand();
@@ -218,7 +221,7 @@ VALUES (@NOME, @CPF, @SALARIO, @SEXO, @CARGO, @PROGRAMADOR)";
             int id = Convert.ToInt32(dataGridViewColaboradores.CurrentRow.Cells[0].Value);
 
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\germa\Documents\TrabalhoCSharp.mdf;Integrated Security=True;Connect Timeout=30";
+            conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=T:\Documentos\Exercicios.mdf;Integrated Security=True;Connect Timeout=30";
             conexao.Open();
 
             SqlCommand comando = new SqlCommand();
@@ -242,7 +245,7 @@ WHERE id = @ID";
             lblId.Text = colaboradores.Id.ToString();
             txtNome.Text = colaboradores.Nome;
             mtbCpf.Text = colaboradores.Cpf;
-            mtbSalario.Text = colaboradores.Salario.ToString();
+            mtbSalario.Text = colaboradores.Salario.ToString("000000.00");
             cbSexo.SelectedItem = colaboradores.Sexo;
             txtCargo.Text = colaboradores.Cargo;
             if (ckbProgramadorSim.Checked)
@@ -275,7 +278,7 @@ WHERE id = @ID";
             if (caixaDialogo == DialogResult.Yes)
             {
                 SqlConnection conexao = new SqlConnection();
-                conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\germa\Documents\TrabalhoCSharp.mdf;Integrated Security=True;Connect Timeout=30";
+                conexao.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=T:\Documentos\Exercicios.mdf;Integrated Security=True;Connect Timeout=30";
                 conexao.Open();
 
                 SqlCommand comando = new SqlCommand();
