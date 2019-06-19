@@ -401,13 +401,13 @@ WHERE id = @ID";
             txtNome.Text = clientes.Nome;
             mtbPeso.Text = clientes.Peso.ToString();
             mtbAltura.Text = clientes.Altura.ToString();
-            if (ckbNomeSujoSim.Checked)
+            if (clientes.NomeSujo == true)
             {
-                clientes.NomeSujo = true;
+                ckbNomeSujoSim.Checked = true;
             }
             else
             {
-                clientes.NomeSujo = false;
+                ckbNomeSujoSim.Checked = false;
             }
             mtbSaldo.Text = clientes.Saldo.ToString("000000.00");
             mtbTelefone.Text = clientes.Telefone;

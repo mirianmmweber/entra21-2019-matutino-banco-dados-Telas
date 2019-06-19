@@ -43,16 +43,17 @@
             this.txtCargo = new System.Windows.Forms.TextBox();
             this.cbSexo = new System.Windows.Forms.ComboBox();
             this.dataGridViewColaboradores = new System.Windows.Forms.DataGridView();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.ckbProgramadorSim = new System.Windows.Forms.CheckBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnCpf = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnSalario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnCargo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnSexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnProgramador = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSalvar = new System.Windows.Forms.Button();
-            this.btnExcluir = new System.Windows.Forms.Button();
-            this.ckbProgramadorSim = new System.Windows.Forms.CheckBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewColaboradores)).BeginInit();
             this.SuspendLayout();
             // 
@@ -209,6 +210,7 @@
             this.dataGridViewColaboradores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewColaboradores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnId,
+            this.ColumnNome,
             this.ColumnCpf,
             this.ColumnSalario,
             this.ColumnCargo,
@@ -221,42 +223,6 @@
             this.dataGridViewColaboradores.Size = new System.Drawing.Size(535, 158);
             this.dataGridViewColaboradores.TabIndex = 14;
             this.dataGridViewColaboradores.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewColaboradores_CellDoubleClick);
-            // 
-            // ColumnId
-            // 
-            this.ColumnId.HeaderText = "ID";
-            this.ColumnId.Name = "ColumnId";
-            this.ColumnId.ReadOnly = true;
-            // 
-            // ColumnCpf
-            // 
-            this.ColumnCpf.HeaderText = "CPF";
-            this.ColumnCpf.Name = "ColumnCpf";
-            this.ColumnCpf.ReadOnly = true;
-            // 
-            // ColumnSalario
-            // 
-            this.ColumnSalario.HeaderText = "Salário";
-            this.ColumnSalario.Name = "ColumnSalario";
-            this.ColumnSalario.ReadOnly = true;
-            // 
-            // ColumnCargo
-            // 
-            this.ColumnCargo.HeaderText = "Cargo";
-            this.ColumnCargo.Name = "ColumnCargo";
-            this.ColumnCargo.ReadOnly = true;
-            // 
-            // ColumnSexo
-            // 
-            this.ColumnSexo.HeaderText = "Sexo";
-            this.ColumnSexo.Name = "ColumnSexo";
-            this.ColumnSexo.ReadOnly = true;
-            // 
-            // ColumnProgramador
-            // 
-            this.ColumnProgramador.HeaderText = "Programador";
-            this.ColumnProgramador.Name = "ColumnProgramador";
-            this.ColumnProgramador.ReadOnly = true;
             // 
             // btnSalvar
             // 
@@ -302,6 +268,48 @@
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados Pessoais";
+            // 
+            // ColumnId
+            // 
+            this.ColumnId.HeaderText = "ID";
+            this.ColumnId.Name = "ColumnId";
+            this.ColumnId.ReadOnly = true;
+            // 
+            // ColumnNome
+            // 
+            this.ColumnNome.HeaderText = "Nome";
+            this.ColumnNome.Name = "ColumnNome";
+            this.ColumnNome.ReadOnly = true;
+            // 
+            // ColumnCpf
+            // 
+            this.ColumnCpf.HeaderText = "CPF";
+            this.ColumnCpf.Name = "ColumnCpf";
+            this.ColumnCpf.ReadOnly = true;
+            // 
+            // ColumnSalario
+            // 
+            this.ColumnSalario.HeaderText = "Salário";
+            this.ColumnSalario.Name = "ColumnSalario";
+            this.ColumnSalario.ReadOnly = true;
+            // 
+            // ColumnCargo
+            // 
+            this.ColumnCargo.HeaderText = "Cargo";
+            this.ColumnCargo.Name = "ColumnCargo";
+            this.ColumnCargo.ReadOnly = true;
+            // 
+            // ColumnSexo
+            // 
+            this.ColumnSexo.HeaderText = "Sexo";
+            this.ColumnSexo.Name = "ColumnSexo";
+            this.ColumnSexo.ReadOnly = true;
+            // 
+            // ColumnProgramador
+            // 
+            this.ColumnProgramador.HeaderText = "Programador";
+            this.ColumnProgramador.Name = "ColumnProgramador";
+            this.ColumnProgramador.ReadOnly = true;
             // 
             // ColaboradoresForm
             // 
@@ -356,15 +364,16 @@
         private System.Windows.Forms.TextBox txtCargo;
         private System.Windows.Forms.ComboBox cbSexo;
         private System.Windows.Forms.DataGridView dataGridViewColaboradores;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.CheckBox ckbProgramadorSim;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCpf;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSalario;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCargo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSexo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnProgramador;
-        private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.Button btnExcluir;
-        private System.Windows.Forms.CheckBox ckbProgramadorSim;
-        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

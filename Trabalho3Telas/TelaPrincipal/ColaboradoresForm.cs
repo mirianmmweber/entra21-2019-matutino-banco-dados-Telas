@@ -248,13 +248,13 @@ WHERE id = @ID";
             mtbSalario.Text = colaboradores.Salario.ToString("000000.00");
             cbSexo.SelectedItem = colaboradores.Sexo;
             txtCargo.Text = colaboradores.Cargo;
-            if (ckbProgramadorSim.Checked)
+            if (colaboradores.Programador == true)
             {
-                colaboradores.Programador = true;
+                ckbProgramadorSim.Checked = true;
             }
             else
             {
-                colaboradores.Programador = false;
+                ckbProgramadorSim.Checked = false;
             }
 
             conexao.Close();
