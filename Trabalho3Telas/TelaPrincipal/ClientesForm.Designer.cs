@@ -109,11 +109,11 @@
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
-            this.lblNome.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.Location = new System.Drawing.Point(16, 34);
             this.lblNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(50, 16);
+            this.lblNome.Size = new System.Drawing.Size(52, 16);
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome:";
             // 
@@ -121,11 +121,11 @@
             // 
             this.lblPeso.AutoSize = true;
             this.lblPeso.BackColor = System.Drawing.Color.Transparent;
-            this.lblPeso.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPeso.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPeso.Location = new System.Drawing.Point(19, 102);
             this.lblPeso.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPeso.Name = "lblPeso";
-            this.lblPeso.Size = new System.Drawing.Size(41, 16);
+            this.lblPeso.Size = new System.Drawing.Size(42, 16);
             this.lblPeso.TabIndex = 3;
             this.lblPeso.Text = "Peso:";
             // 
@@ -133,11 +133,11 @@
             // 
             this.lblAltura.AutoSize = true;
             this.lblAltura.BackColor = System.Drawing.Color.Transparent;
-            this.lblAltura.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAltura.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAltura.Location = new System.Drawing.Point(15, 167);
             this.lblAltura.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAltura.Name = "lblAltura";
-            this.lblAltura.Size = new System.Drawing.Size(52, 16);
+            this.lblAltura.Size = new System.Drawing.Size(51, 16);
             this.lblAltura.TabIndex = 4;
             this.lblAltura.Text = "Altura:";
             // 
@@ -145,11 +145,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(148, 15);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 16);
+            this.label6.Size = new System.Drawing.Size(86, 16);
             this.label6.TabIndex = 5;
             this.label6.Text = "Nome Sujo?";
             // 
@@ -157,22 +157,22 @@
             // 
             this.lblSaldo.AutoSize = true;
             this.lblSaldo.BackColor = System.Drawing.Color.Transparent;
-            this.lblSaldo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaldo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSaldo.Location = new System.Drawing.Point(148, 83);
             this.lblSaldo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSaldo.Name = "lblSaldo";
-            this.lblSaldo.Size = new System.Drawing.Size(45, 16);
+            this.lblSaldo.Size = new System.Drawing.Size(44, 16);
             this.lblSaldo.TabIndex = 6;
             this.lblSaldo.Text = "Saldo";
             // 
             // lblComplemento
             // 
             this.lblComplemento.AutoSize = true;
-            this.lblComplemento.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblComplemento.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblComplemento.Location = new System.Drawing.Point(520, 167);
             this.lblComplemento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblComplemento.Name = "lblComplemento";
-            this.lblComplemento.Size = new System.Drawing.Size(103, 16);
+            this.lblComplemento.Size = new System.Drawing.Size(108, 16);
             this.lblComplemento.TabIndex = 7;
             this.lblComplemento.Text = "Complemento:";
             // 
@@ -180,11 +180,11 @@
             // 
             this.lblTelefone.AutoSize = true;
             this.lblTelefone.BackColor = System.Drawing.Color.Transparent;
-            this.lblTelefone.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefone.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefone.Location = new System.Drawing.Point(148, 148);
             this.lblTelefone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(66, 16);
+            this.lblTelefone.Size = new System.Drawing.Size(64, 16);
             this.lblTelefone.TabIndex = 8;
             this.lblTelefone.Text = "Telefone:";
             // 
@@ -192,11 +192,11 @@
             // 
             this.lblEstado.AutoSize = true;
             this.lblEstado.BackColor = System.Drawing.Color.Transparent;
-            this.lblEstado.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstado.Location = new System.Drawing.Point(368, 34);
             this.lblEstado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(55, 16);
+            this.lblEstado.Size = new System.Drawing.Size(56, 16);
             this.lblEstado.TabIndex = 9;
             this.lblEstado.Text = "Estado:";
             // 
@@ -204,11 +204,11 @@
             // 
             this.lblBairro.AutoSize = true;
             this.lblBairro.BackColor = System.Drawing.Color.Transparent;
-            this.lblBairro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBairro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBairro.Location = new System.Drawing.Point(368, 167);
             this.lblBairro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Size = new System.Drawing.Size(51, 16);
+            this.lblBairro.Size = new System.Drawing.Size(48, 16);
             this.lblBairro.TabIndex = 10;
             this.lblBairro.Text = "Bairro:";
             // 
@@ -216,11 +216,11 @@
             // 
             this.lblCep.AutoSize = true;
             this.lblCep.BackColor = System.Drawing.Color.Transparent;
-            this.lblCep.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCep.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCep.Location = new System.Drawing.Point(368, 230);
             this.lblCep.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCep.Name = "lblCep";
-            this.lblCep.Size = new System.Drawing.Size(32, 16);
+            this.lblCep.Size = new System.Drawing.Size(34, 16);
             this.lblCep.TabIndex = 11;
             this.lblCep.Text = "CEP";
             // 
@@ -228,22 +228,22 @@
             // 
             this.lblLogradouro.AutoSize = true;
             this.lblLogradouro.BackColor = System.Drawing.Color.Transparent;
-            this.lblLogradouro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogradouro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogradouro.Location = new System.Drawing.Point(520, 34);
             this.lblLogradouro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLogradouro.Name = "lblLogradouro";
-            this.lblLogradouro.Size = new System.Drawing.Size(87, 16);
+            this.lblLogradouro.Size = new System.Drawing.Size(88, 16);
             this.lblLogradouro.TabIndex = 12;
             this.lblLogradouro.Text = "Logradouro:";
             // 
             // lblNumero
             // 
             this.lblNumero.AutoSize = true;
-            this.lblNumero.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumero.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumero.Location = new System.Drawing.Point(520, 102);
             this.lblNumero.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(63, 16);
+            this.lblNumero.Size = new System.Drawing.Size(64, 16);
             this.lblNumero.TabIndex = 13;
             this.lblNumero.Text = "Número:";
             // 
@@ -308,7 +308,7 @@
             // 
             this.lblCidade.AutoSize = true;
             this.lblCidade.BackColor = System.Drawing.Color.Transparent;
-            this.lblCidade.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCidade.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCidade.Location = new System.Drawing.Point(368, 102);
             this.lblCidade.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCidade.Name = "lblCidade";
